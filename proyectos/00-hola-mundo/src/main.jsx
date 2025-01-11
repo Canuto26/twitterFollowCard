@@ -1,10 +1,19 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
 
+const Button = ({text}) => {
+  return(
+    <button>esto es: {text}</button>
+  )
+}
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  
+  <reactFragment>
+  <Button text = "button 1"/>
+  <Button text = "button 2"/>
+  <Button text = "button 3"/>
+  <Button text = "button 4"/>
+  </reactFragment>
+  
+  
 )
